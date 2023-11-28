@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>ID Images Recognition By AI</title>
+    <style>
+      * {
+        text-align: center;
+        font-family: "Arial", sans-serif; /* You can replace 'Arial' with a suitable Arabic font */
+      }
+      body {
+        padding: 20px;
+      }
+      div {
+        padding: 20px;
+        margin: auto;
+        width: 65%;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>ID Card Uploading and Recognition By AI</h1>
+      <form method="POST" action="/getCardID" enctype="multipart/form-data">
+        <label> Upload the ID Card Image:</label>
+        <input type="file" name="image" id="image" accept="image/*" required />
+        <input type="submit" value="Upload image" />
+      </form>
+    </div>
+  </body>
+</html>
